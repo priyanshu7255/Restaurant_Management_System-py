@@ -2,10 +2,12 @@ import json
 import os
 import uuid
 
-path = r"C:\IndixpertRestaurantProject\Restaurant_Management_System-py\SRC\Database\Employee.json"
+path = os.getcwd()
 
-if os.path.exists(path):
-    with open(path, "r") as f:
+file_path = os.path.join(path,'SRC','Database','Employee.json')
+
+if os.path.exists(file_path):
+    with open(file_path, "r") as f:
         try:
             Employee_list = json.load(f)  
         except json.JSONDecodeError:
@@ -24,7 +26,7 @@ def signUp_Admin():
         Employee_Dict["password"] = input("Enter employee password: ")
     
         Employee_list.append(Employee_Dict)
-        with open(path, "w") as f:
+        with open(file_path, "w") as f:
             json.dump(Employee_list,f, indent = 4)
 
         print("Employee signed up successfully.")  
@@ -38,7 +40,7 @@ def signUp_staff():
         Employee_Dict["password"] = input("Enter employee password: ")
         
         Employee_list.append(Employee_Dict)
-        with open(path, "w") as f:
+        with open(file_path, "w") as f:
             json.dump(Employee_list,f, indent = 4)
 
         print("Employee signed up successfully.")            

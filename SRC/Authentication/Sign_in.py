@@ -1,9 +1,11 @@
 import json 
 import os
 
-path = r"C:\IndixpertRestaurantProject\Restaurant_Management_System-py\SRC\Database\Employee.json"
+path = os.getcwd()
 
-with open(path,"r") as f:
+file_path = os.path.join(path,'SRC','Database','Employee.json')
+
+with open(file_path,"r") as f:
     Employees = json.load(f)
 
 def Signin_staff():

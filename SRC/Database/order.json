@@ -1,0 +1,17 @@
+{
+    "order_id": "1ce8d",
+    "items": [
+        {
+            "Item Name": "Dosa",
+            "Size": "single",
+            "Quantity": 5,
+            "Total Price": 350.0
+        },
+        {
+            "Item Name": "IdalySammber",
+            "Size": "single",
+            "Quantity": 3,
+            "Total Price": 180.0
+        }
+    ]
+}
