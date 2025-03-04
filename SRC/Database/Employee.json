@@ -89,5 +89,19 @@
         "Name": "Amar",
         "Email_id": "amar@gmail.com",
         "password": "amar123"
+    },
+    {
+        "Role": "Staff",
+        "Id": "227fa92",
+        "Name": "Vishal",
+        "Email_id": "vishal@gmail.com",
+        "Password": "vishal123"
+    },
+    {
+        "Role": "Staff",
+        "Id": "6f46ab7",
+        "Name": "Mohit",
+        "Email_id": "mohit@gmail.com",
+        "Password": "mohit123"
     }
 ]

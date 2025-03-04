@@ -1,17 +1,17 @@
 {
-    "order_id": "1ce8d",
+    "order_id": "655ec",
     "items": [
         {
-            "Item Name": "Dosa",
+            "Item Name": "LachhaParatha",
             "Size": "single",
             "Quantity": 5,
-            "Total Price": 350.0
+            "Total Price": 150.0
         },
         {
-            "Item Name": "IdalySammber",
-            "Size": "single",
-            "Quantity": 3,
-            "Total Price": 180.0
+            "Item Name": "MatarPaneer",
+            "Size": "full",
+            "Quantity": 1,
+            "Total Price": 250.0
         }
     ]
 }

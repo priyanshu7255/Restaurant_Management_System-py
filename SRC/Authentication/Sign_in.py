@@ -1,25 +1,59 @@
 import json 
 import os
+import sys
+from SRC.Domain.Menu.menu import MenuManager
 
-path = os.getcwd()
+manage = MenuManager()
 
-file_path = os.path.join(path,'SRC','Database','Employee.json')
+if os.name == 'nt':  
+    import msvcrt
+    def get_password(prompt="Enter your password: "):
+        print(prompt, end="", flush=True)
+        password = ""
+        while True:
+            char = msvcrt.getch().decode("utf-8")
+            if char == "\r" or char == "\n":  
+                print() 
+                break
+            elif char == "\b":  
+                if len(password) > 0:
+                    sys.stdout.write("\b \b")  
+                    sys.stdout.flush()
+                    password = password[:-1]
+            else:
+                sys.stdout.write("*") 
+                sys.stdout.flush()
+                password += char
+        return password
 
-with open(file_path,"r") as f:
-    Employees = json.load(f)
+class EmployeeManagement:
+    def __init__(self):
+        self.path = os.getcwd()
+        self.file_path = os.path.join(self.path, 'SRC', 'Database', 'Employee.json')
+        self.load_employees()
 
-def Signin_staff():
+    def load_employees(self):
+        try:
+            with open(self.file_path, "r") as f:
+                self.Employees = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            self.Employees = []
 
-    Username = input("Enter your name: ")    
-    Password = input("Enter your password: ")
+    def signin(self, role):
+        username = input("Enter your name: ")    
+        password = get_password("Enter your password: ") 
 
-    for E in Employees:
+        for employee in self.Employees:
+            if username == employee["Name"] and password == employee["password"] and role == employee["Role"]:
+                print("Profile Matched.")
+                print("🙏 Welcome to our restaurant 🙏")   
+                return True 
         
-        if Username == E["Name"] and Password == E["password"]:
-            print("Profile Matched.")
-            print("🙏 Welcome to our restaurant 🙏")
-            break
-    else:
-        print("Invalid credintials.")
+        print("Invalid credentials.")
+        return False  
 
-            
+    def signin_staff(self):
+        return self.signin("Staff")
+
+    def signin_admin(self):
+        return self.signin("Admin")
