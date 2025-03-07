@@ -178,53 +178,5 @@
             }
         ],
         "Total Amount": 265.0
-    },
-    {
-        "Payment Id": "7ebdec",
-        "Items": [
-            {
-                "Item": "Dosa",
-                "Quantity": 5,
-                "Size": "single",
-                "Price": 350.0
-            }
-        ],
-        "Total Amount": 350.0
-    },
-    {
-        "Payment Id": "dd757d",
-        "Items": [
-            {
-                "Item": "LachhaParatha",
-                "Quantity": 5,
-                "Size": "single",
-                "Price": 150.0
-            },
-            {
-                "Item": "MatarPaneer",
-                "Quantity": 1,
-                "Size": "full",
-                "Price": 250.0
-            }
-        ],
-        "Total Amount": 400.0
-    },
-    {
-        "Payment Id": "449083",
-        "Items": [
-            {
-                "Item": "LachhaParatha",
-                "Quantity": 5,
-                "Size": "single",
-                "Price": 150.0
-            },
-            {
-                "Item": "MatarPaneer",
-                "Quantity": 1,
-                "Size": "full",
-                "Price": 250.0
-            }
-        ],
-        "Total Amount": 400.0
     }
 ]

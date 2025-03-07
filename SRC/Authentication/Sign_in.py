@@ -40,18 +40,18 @@ class EmployeeManagement:
             self.Employees = []
 
     def signin(self, role):
-        username = input("Enter your name: ")    
-        password = get_password("Enter your password: ") 
+        while True:
+            username = input("Enter your name: ")    
+            password = get_password("Enter your password: ") 
 
-        for employee in self.Employees:
-            if username == employee["Name"] and password == employee["password"] and role == employee["Role"]:
-                print("Profile Matched.")
-                print("🙏 Welcome to our restaurant 🙏")   
-                return True 
-        
-        print("Invalid credentials.")
-        return False  
-
+            for employee in self.Employees:
+                if username == employee["Name"] and password == employee["password"] and role == employee["Role"]:
+                    print("Profile Matched.")
+                    print("🙏 Welcome to our restaurant 🙏")   
+                    return
+            else:
+                print("Invalid credentials.Please enter correct credentials for sign in.")                                  
+                
     def signin_staff(self):
         return self.signin("Staff")
 

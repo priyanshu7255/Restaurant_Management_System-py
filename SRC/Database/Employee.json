@@ -103,5 +103,12 @@
         "Name": "Mohit",
         "Email_id": "mohit@gmail.com",
         "Password": "mohit123"
+    },
+    {
+        "Role": "Admin",
+        "Id": "3654210",
+        "Name": "abc",
+        "Email_id": "abc@gmail.com",
+        "Password": "abc123"
     }
 ]

@@ -452,7 +452,7 @@
         },
         {
             "Sr.no.": 3,
-            "Item Name": "PannerDosa",
+            "Item Name": "Paneer Dosa",
             "Price": {
                 "single": 120.0
             }
@@ -465,16 +465,15 @@
             }
         },
         {
-            "Sr.no.": 6,
-            "Item Name": "IdalySammber",
-            "Price": {
-                "single": 60.0
-            }
-        },
-        {
             "Item Name": "Masala dosa",
             "Price": {
                 "Single": 150.0
+            }
+        },
+        {
+            "Item Name": "idaly sambhar",
+            "Price": {
+                "Single": 80.0
             }
         }
     ]

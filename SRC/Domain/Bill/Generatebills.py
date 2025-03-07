@@ -2,6 +2,10 @@ import json
 import uuid
 import os
 import logging
+import datetime
+from SRC.Domain.Order.Orderprocessing import OrderSystem
+
+order = OrderSystem()
 
 path = os.getcwd()
 log_file_path = os.path.join(path,'SRC','Logs','Application_log.txt')
@@ -14,6 +18,7 @@ class CustomerBill:
         self.file_path = os.path.join(self.path, 'SRC', 'Database', 'order.json')
         self.bill_path = os.path.join(self.path, 'SRC', 'Database', 'bill.json')
         self.payment_id = str(uuid.uuid4())[0:6]
+        self.table = order.table_number
     
     def read_orders(self):
         try:
@@ -26,19 +31,29 @@ class CustomerBill:
             return {}
     
     def generate_bill(self):
+        """Generate the bill for the latest order, including the table number."""
+
         try:
             orderlist = self.read_orders()
-            
-            if "items" not in orderlist:
-                error_message = "Invalid JSON format: 'items' key not found!"
-                print(error_message)
-                logging.error(error_message)
+
+            if not orderlist or "items" not in orderlist:
+                print("⚠ No valid orders found!")
                 return
-            
+
             total_amount = 0
             bill_items = []
-            
-            print("Payment Id: ", self.payment_id)
+
+            table_number = orderlist.get("table_number", "N/A")
+            customer_name = orderlist.get("customer_name", "N/A")
+
+            print("\n🧾 BILL DETAILS 🧾")
+            print("--------------------------")
+            print(f"Date = {datetime.datetime.now().date()}")
+            print(f"Payment ID: {self.payment_id}")
+            print(f"Table Number: {table_number}")
+            print(f"Customer Name: {customer_name}")
+            print("--------------------------")
+
             for item in orderlist["items"]:
                 print(f"Item: {item['Item Name']}, Quantity: {item['Quantity']}, Size: {item['Size']}, Price: ₹{item['Total Price']}")
                 total_amount += item["Total Price"]
@@ -49,20 +64,25 @@ class CustomerBill:
                     "Size": item['Size'],
                     "Price": item['Total Price']
                 })
-            
-            print("\nTotal Order Amount: ₹", total_amount)
+
+            print("--------------------------")
+            print(f"Total Order Amount: ₹{total_amount}")
+            print("--------------------------")
 
             final_bill = {
-                "Payment Id": self.payment_id,
+                "Payment ID": self.payment_id,
+                "Table Number": table_number,
+                "Customer Name": customer_name,
                 "Items": bill_items,
                 "Total Amount": total_amount
             }
 
             self.save_bill(final_bill)
-            print(f"\nYour order has been saved to '{self.bill_path}'.")
-        
+            print(f"\n✅ Your bill has been saved to '{self.bill_path}'.")
+
         except Exception as e:
-            logging.error(f"Error generating bill: {e}")
+            print(f"⚠ Error generating bill: {e}")
+
     
     def save_bill(self, bill):
         try:

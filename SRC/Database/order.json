@@ -1,17 +1,13 @@
 {
-    "order_id": "655ec",
+    "order_id": "0e61c",
     "items": [
         {
-            "Item Name": "LachhaParatha",
+            "Item Name": "Dosa",
             "Size": "single",
-            "Quantity": 5,
-            "Total Price": 150.0
-        },
-        {
-            "Item Name": "MatarPaneer",
-            "Size": "full",
             "Quantity": 1,
-            "Total Price": 250.0
+            "Total Price": 70.0
         }
-    ]
+    ],
+    "table_number": 6,
+    "customer_name": "kaushik"
 }

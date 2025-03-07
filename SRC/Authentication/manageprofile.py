@@ -4,11 +4,16 @@ from SRC.Domain.Menu.menu import MenuManager
 from SRC.Domain.Order.Orderprocessing import OrderSystem
 from SRC.Domain.Bill.Generatebills import CustomerBill
 from SRC.Domain.Booking.tablebooking import Restaurant
+from SRC.Domain.Reports.Restaurant_report import RevenueReport
+from SRC.Domain.Reports.tablebooking_report import TableBookingReport
 
+restaurant = Restaurant
 manage = MenuManager()
 order = OrderSystem()
 bill = CustomerBill()
 restaurant = Restaurant()
+report = RevenueReport()
+report2 = TableBookingReport()
 
 class AuthenticationManager:
     def __init__(self):
@@ -66,7 +71,8 @@ class AuthenticationManager:
             print("2. Add Item.")
             print("3. Remove Item.")
             print("4. Update Item.")
-            print("5. Logout.")
+            print("5. See restaurant report")
+            print("6. Logout.")
 
             choice = input("Enter your choice: ").strip()
             if choice == "1":
@@ -78,6 +84,21 @@ class AuthenticationManager:
             elif choice == "4":
                 manage.update_item()
             elif choice == "5":
+                while True:
+                    print("1. Revenue report")
+                    print("2. Table booking report")
+                    print("3. Exit")
+                    iut = int(input("Enter any number: "))
+                    if iut == 1:
+                        report.display_report()
+                    elif iut == 2:
+                        report2.display_report()
+                    elif iut == 3:
+                        print("Goodbyeee")
+                        break
+                    else:
+                        print("Invalid number.")           
+            elif choice == "6":
                 print("Logging out... Thank you!")
                 break
             else:
