@@ -1,0 +1,13 @@
+{
+    "order_id": "2e8cd",
+    "items": [
+        {
+            "Item Name": "Dosa",
+            "Size": "single",
+            "Quantity": 1,
+            "Total Price": 70.0
+        }
+    ],
+    "table_number": 5,
+    "customer_name": "kaushik"
+}
