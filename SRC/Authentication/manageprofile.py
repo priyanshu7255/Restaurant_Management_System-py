@@ -7,6 +7,7 @@ from SRC.Domain.Booking.tablebooking import Restaurant
 from SRC.Domain.Reports.Restaurant_report import RevenueReport
 from SRC.Domain.Reports.tablebooking_report import TableBookingReport
 
+
 restaurant = Restaurant
 manage = MenuManager()
 order = OrderSystem()
@@ -21,23 +22,25 @@ class AuthenticationManager:
         self.emp_mgr = EmployeeManager()
     
     def display_menu(self):
-            print("\n--- Authentication Menu ---")
-            print("1. Sign in")
-            print("2. Sign up")
-            print("3. Exit")
-            
-            try:
-                userchoice = int(input("Choose an option: "))
-                if userchoice == 1:
-                    self.sign_in()
-                elif userchoice == 2:
-                    self.sign_up()
-                elif userchoice == 3:
-                    print("Goodbye!")
-                else:
-                    print("Invalid input. Please enter 1, 2, or 3.")
-            except ValueError:
-                print("Invalid input. Please enter a valid number.")
+            while True:
+                print("\n--- Authentication Menu ---")
+                print("1. Sign in")
+                print("2. Sign up")
+                print("3. Exit")
+                
+                try:
+                    userchoice = int(input("Choose an option: "))
+                    if userchoice == 1:
+                        self.sign_in()
+                    elif userchoice == 2:
+                        self.sign_up()
+                    elif userchoice == 3:
+                        print("Goodbye!")
+                        break
+                    else:
+                        print("Invalid input. Please enter 1, 2, or 3.")
+                except ValueError:
+                    print("Invalid input. Please enter a valid number.")
 
     def sign_in(self):
             print("\n--- Sign In ---")
@@ -49,12 +52,10 @@ class AuthenticationManager:
                 input1 = int(input("Enter your choice: "))
 
                 if input1 == 1:
-                    success = self.emp_mgmt.signin_admin()                    
-                    self.admin_menu()
+                    self.emp_mgmt.signin_admin()                    
 
                 elif input1 == 2:
-                    success = self.emp_mgmt.signin_staff()
-                    self.staff_menu()
+                    self.emp_mgmt.signin_staff()
 
                 elif input1 == 3:
                     print("Goodbye!")
@@ -178,18 +179,17 @@ class AuthenticationManager:
 
     def sign_up(self):
         while True:
+        
             print("\n--- Sign Up ---")
-            print("1. Admin Signup")
-            print("2. Staff Signup")
-            print("3. Back to Main Menu")
+            print("1. Staff Signup")
+            print("2. exit")
 
             try:
-                userinput = int(input("Choose your role: "))
+                userinput = int(input("Choose any number: "))
                 if userinput == 1:
-                    self.emp_mgr.sign_up_admin()
-                elif userinput == 2:
                     self.emp_mgr.sign_up_staff()
-                elif userinput == 3:
+                elif userinput == 2:
+                    print("Goodbyee")
                     break
                 else:
                     print("Invalid input. Please try again.")

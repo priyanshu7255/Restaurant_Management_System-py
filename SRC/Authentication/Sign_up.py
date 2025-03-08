@@ -50,19 +50,7 @@ class EmployeeManager:
         """Check if an email is already registered."""
         return any(employee["Email_id"].lower() == email.lower() for employee in self.employee_list)
 
-    def sign_up(self, role, invite_code=None):
-        """Sign up a new employee with the given role."""
-        if role == "Admin":
-            entered_code = get_password("Enter admin invitation code: ").strip()
-            if entered_code != self.Admin_invite_code:
-                print("Invalid invitation code! Only authorized users can sign up as admin.")
-                return
-        elif role == "Staff":
-            entered_code = get_password("Enter staff invitation code: ").strip()
-            if entered_code != self.Staff_invite_code:
-                print("Invalid invitation code! Only authorized users can sign up as staff.")
-                return
-
+    def sign_up(self, role):
         name = input("Enter employee name: ").strip()
         email = input("Enter employee email id: ").strip()
 
@@ -70,7 +58,7 @@ class EmployeeManager:
             print("This email is already registered. Try logging in instead.")
             return
 
-        password = input("Enter employee password: ").strip()
+        password = get_password("Enter employee password: ").strip()
         employee_dict = {
             "Role": role,
             "Id": str(uuid.uuid4())[:7],  
@@ -83,29 +71,10 @@ class EmployeeManager:
         self.save_employees()
         print(f"{role} signed up successfully.")
 
-    def sign_up_admin(self):
-        """Sign up a new admin with an invitation code."""
-        self.sign_up("Admin")
+    # def sign_up_admin(self):
+    #     """Sign up a new admin with an invitation code."""
+    #     self.sign_up("Admin")
 
     def sign_up_staff(self):
         """Sign up a new staff member (no invite code needed)."""
         self.sign_up("Staff")
-
-if __name__ == "__main__":
-    manager = EmployeeManager()
-    
-    while True:
-        print("\n1. Sign up as Admin")
-        print("2. Sign up as Staff")
-        print("3. Exit")
-        choice = input("Enter your choice: ")
-
-        if choice == "1":
-            manager.sign_up_admin()
-        elif choice == "2":
-            manager.sign_up_staff()
-        elif choice == "3":
-            print("Exiting... Goodbye!")
-            break
-        else:
-            print("Invalid choice! Please select again.")

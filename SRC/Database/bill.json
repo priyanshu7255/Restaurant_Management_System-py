@@ -178,5 +178,39 @@
             }
         ],
         "Total Amount": 265.0
+    },
+    {
+        "Payment ID": "bfa631",
+        "Table Number": 6,
+        "Customer Name": "kaushik",
+        "Items": [
+            {
+                "Item": "Dosa",
+                "Quantity": 2,
+                "Size": "single",
+                "Price": 140.0
+            }
+        ],
+        "Total Amount": 140.0
+    },
+    {
+        "Payment ID": "bfa631",
+        "Table Number": 8,
+        "Customer Name": "neeraj",
+        "Items": [
+            {
+                "Item": "Dosa",
+                "Quantity": 2,
+                "Size": "single",
+                "Price": 140.0
+            },
+            {
+                "Item": "Dosa",
+                "Quantity": 2,
+                "Size": "single",
+                "Price": 140.0
+            }
+        ],
+        "Total Amount": 280.0
     }
 ]

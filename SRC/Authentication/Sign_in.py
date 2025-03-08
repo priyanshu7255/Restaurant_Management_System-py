@@ -39,21 +39,45 @@ class EmployeeManagement:
         except (FileNotFoundError, json.JSONDecodeError):
             self.Employees = []
 
-    def signin(self, role):
-        while True:
-            username = input("Enter your name: ")    
-            password = get_password("Enter your password: ") 
+    # def signin(self):
+    #         username = input("Enter user name: ")    
+    #         password = get_password("Enter your password: ") 
 
-            for employee in self.Employees:
-                if username == employee["Name"] and password == employee["password"] and role == employee["Role"]:
-                    print("Profile Matched.")
-                    print("🙏 Welcome to our restaurant 🙏")   
-                    return
-            else:
-                print("Invalid credentials.Please enter correct credentials for sign in.")                                  
+    #         for employee in self.Employees:
+    #             if username == employee["Name"] and password == employee["Password"]:
+    #                 print("Profile Matched.")
+    #                 print("🙏 Welcome to our restaurant 🙏")   
+    #                 return
+    #         else:
+    #             print("Invalid credentials.Please enter correct credentials for sign in.")                                  
                 
     def signin_staff(self):
-        return self.signin("Staff")
+        from SRC.Authentication.manageprofile import AuthenticationManager
+        authmgr = AuthenticationManager()
+        username = input("Enter user name: ")    
+        password = get_password("Enter your password: ") 
+
+        for employee in self.Employees:
+            if username == employee["Name"] and password == employee["Password"]:
+                print("Profile Matched.")
+                print("🙏 Welcome to our restaurant 🙏")
+                authmgr.staff_menu()   
+                return
+        else:
+            print("Invalid credentials.Please enter correct credentials for sign in.")
+    
 
     def signin_admin(self):
-        return self.signin("Admin")
+        from SRC.Authentication.manageprofile import AuthenticationManager
+        authmgr = AuthenticationManager()
+        username = input("Enter user name: ")    
+        password = get_password("Enter your password: ") 
+
+        for employee in self.Employees:
+            if username == employee["Name"] and password == employee["Password"]:
+                print("Profile Matched.")
+                print("🙏 Welcome to our restaurant 🙏") 
+                authmgr.admin_menu()  
+                return
+        else:
+            print("Invalid credentials.Please enter correct credentials for sign in.")

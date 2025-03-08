@@ -222,6 +222,7 @@ class OrderSystem:
                             print("⚠ Error accessing previous bookings. Please try again.")
 
                     break  
+                break
             else:
                 print("⚠ Invalid input. Please enter 'yes' or 'no'.")
 

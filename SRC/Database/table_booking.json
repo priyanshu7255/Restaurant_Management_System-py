@@ -1,3 +1,18 @@
 {
-    
+    "07-03-2025": {
+        "5": {
+            "customer": "kaushik",
+            "seats": 10
+        }
+    },
+    "08-03-2025": {
+        "6": {
+            "customer": "kaushik",
+            "seats": 12
+        },
+        "8": {
+            "customer": "neeraj",
+            "seats": 16
+        }
+    }
 }

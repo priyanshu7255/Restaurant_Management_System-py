@@ -1,13 +1,19 @@
 {
-    "order_id": "2e8cd",
+    "order_id": "e862c",
     "items": [
         {
             "Item Name": "Dosa",
             "Size": "single",
-            "Quantity": 1,
-            "Total Price": 70.0
+            "Quantity": 2,
+            "Total Price": 140.0
+        },
+        {
+            "Item Name": "Dosa",
+            "Size": "single",
+            "Quantity": 2,
+            "Total Price": 140.0
         }
     ],
-    "table_number": 5,
-    "customer_name": "kaushik"
+    "table_number": 8,
+    "customer_name": "neeraj"
 }
