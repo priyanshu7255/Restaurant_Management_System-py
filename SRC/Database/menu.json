@@ -1,0 +1,487 @@
+{
+    "breakfast": [
+        {
+            "Sr.no.": 1,
+            "Item Name": "kachori",
+            "Price": {
+                "single": 20.0
+            }
+        },
+        {
+            "Sr.no.": 2,
+            "Item Name": "Samosa",
+            "Price": {
+                "single": 15.0
+            }
+        },
+        {
+            "Sr.no.": 3,
+            "Item Name": "Samosa-chat",
+            "Price": {
+                "single": 30.0
+            }
+        },
+        {
+            "Sr.no.": 4,
+            "Item Name": "Puri-sabzi",
+            "Price": {
+                "single": 50.0
+            }
+        },
+        {
+            "Sr.no.": 5,
+            "Item Name": "chole-Bhature",
+            "Price": {
+                "single": 80.0
+            }
+        },
+        {
+            "Sr.no.": 6,
+            "Item Name": "Aloo-Paratha",
+            "Price": {
+                "single": 50.0
+            }
+        },
+        {
+            "Sr.no.": 7,
+            "Item Name": "Gobi-Paratha",
+            "Price": {
+                "single": 60.0
+            }
+        },
+        {
+            "Sr.no.": 8,
+            "Item Name": "Mix-Paratha",
+            "Price": {
+                "single": 60.0
+            }
+        },
+        {
+            "Sr.no.": 9,
+            "Item Name": "PannerParatha",
+            "Price": {
+                "single": 70.0
+            }
+        },
+        {
+            "Sr.no.": 10,
+            "Item Name": "plain-Paratha",
+            "Price": {
+                "single": 40.0
+            }
+        },
+        {
+            "Sr.no.": 11,
+            "Item Name": "Methi-Paratha",
+            "Price": {
+                "single": 50.0
+            }
+        },
+        {
+            "Sr.no.": 20,
+            "Item Name": " Toast",
+            "Price": {
+                "single": 10.0
+            }
+        },
+        {
+            "Sr.no.": 14,
+            "Item Name": "Dal Kachori",
+            "Price": {
+                "single": 40.0
+            }
+        },
+        {
+            "Sr.no.": 16,
+            "Item Name": "Poha",
+            "Price": {
+                "single": 40.0
+            }
+        },
+        {
+            "Sr.no.": 16,
+            "Item Name": "biscuts",
+            "Price": {
+                "single": 5.0
+            }
+        },
+        {
+            "Item Name": "Poha",
+            "Price": {
+                "Full": 40.0,
+                "Half": 30.0
+            }
+        }
+    ],
+    "drinks": [
+        {
+            "Sr.no.": 12,
+            "Item Name": "Coffee",
+            "Price": {
+                "single": 60.0
+            }
+        },
+        {
+            "Sr.no.": 13,
+            "Item Name": "Black-Coffee",
+            "Price": {
+                "single": 80.0
+            }
+        },
+        {
+            "Sr.no.": 14,
+            "Item Name": "Cold-Coffee",
+            "Price": {
+                "single": 100.0
+            }
+        },
+        {
+            "Sr.no.": 15,
+            "Item Name": "Hot-Coffee",
+            "Price": {
+                "single": 70.0
+            }
+        },
+        {
+            "Sr.no.": 16,
+            "Item Name": " Tea",
+            "Price": {
+                "single": 20.0
+            }
+        },
+        {
+            "Sr.no.": 17,
+            "Item Name": "Masala-Tea",
+            "Price": {
+                "single": 40.0
+            }
+        },
+        {
+            "Sr.no.": 18,
+            "Item Name": "Orange-Juice",
+            "Price": {
+                "single": 80.0
+            }
+        },
+        {
+            "Sr.no.": 19,
+            "Item Name": "Mango-Juice",
+            "Price": {
+                "single": 60.0
+            }
+        },
+        {
+            "Sr.no.": 20,
+            "Item Name": "Water Bottle",
+            "Price": {
+                "single": 20.0
+            }
+        }
+    ],
+    "ice cream": [
+        {
+            "Sr.no.": 1,
+            "Item Name": "Vanilla",
+            "Price": {
+                "single": 50.0
+            }
+        },
+        {
+            "Sr.no.": 2,
+            "Item Name": "Strawberry",
+            "Price": {
+                "single": 60.0
+            }
+        },
+        {
+            "Sr.no.": 3,
+            "Item Name": "Chocolate",
+            "Price": {
+                "single": 40.0
+            }
+        },
+        {
+            "Sr.no.": 4,
+            "Item Name": "ButterScotch",
+            "Price": {
+                "single": 50.0
+            }
+        },
+        {
+            "Sr.no.": 6,
+            "Item Name": "MangoIcecrea",
+            "Price": {
+                "single": 50.0
+            }
+        }
+    ],
+    "lunch": [
+        {
+            "Sr.no.": 1,
+            "Item Name": "Dal-tadka",
+            "Price": {
+                "half": 80.0,
+                "full": 140.0
+            }
+        },
+        {
+            "Sr.no.": 2,
+            "Item Name": "Dal-makhani",
+            "Price": {
+                "half": 90.0,
+                "full": 150.0
+            }
+        },
+        {
+            "Sr.no.": 3,
+            "Item Name": "Dal-fry",
+            "Price": {
+                "half": 80.0,
+                "full": 140.0
+            }
+        },
+        {
+            "Sr.no.": 6,
+            "Item Name": "Dal-chana",
+            "Price": {
+                "half": 100.0,
+                "full": 180.0
+            }
+        },
+        {
+            "Sr.no.": 7,
+            "Item Name": "Dal-palak",
+            "Price": {
+                "half": 70.0,
+                "full": 130.0
+            }
+        },
+        {
+            "Sr.no.": 8,
+            "Item Name": "Dal-masoor",
+            "Price": {
+                "half": 70.0,
+                "full": 150.0
+            }
+        },
+        {
+            "Sr.no.": 10,
+            "Item Name": "Dal-urad",
+            "Price": {
+                "half": 80.0,
+                "full": 140.0
+            }
+        },
+        {
+            "Sr.no.": 11,
+            "Item Name": "Jeera-rice",
+            "Price": {
+                "half": 90.0,
+                "full": 150.0
+            }
+        },
+        {
+            "Sr.no.": 12,
+            "Item Name": "Plain-rice",
+            "Price": {
+                "half": 80.0,
+                "full": 140.0
+            }
+        },
+        {
+            "Sr.no.": 13,
+            "Item Name": "Veg-pulao",
+            "Price": {
+                "half": 100.0,
+                "full": 180.0
+            }
+        },
+        {
+            "Sr.no.": 14,
+            "Item Name": "Veg-biryani",
+            "Price": {
+                "half": 100.0,
+                "full": 180.0
+            }
+        },
+        {
+            "Sr.no.": 15,
+            "Item Name": "MatarPanner",
+            "Price": {
+                "half": 110.0,
+                "full": 200.0
+            }
+        },
+        {
+            "Sr.no.": 16,
+            "Item Name": "Burger",
+            "Price": {
+                "single": 70.0
+            }
+        }
+    ],
+    "dinner": [
+        {
+            "Sr.no.": 1,
+            "Item Name": "Aloo-jeera",
+            "Price": {
+                "half": 80.0,
+                "full": 150.0
+            }
+        },
+        {
+            "Sr.no.": 2,
+            "Item Name": "Aloo-matar",
+            "Price": {
+                "half": 90.0,
+                "full": 160.0
+            }
+        },
+        {
+            "Sr.no.": 3,
+            "Item Name": "Aloo-palak",
+            "Price": {
+                "half": 80.0,
+                "full": 150.0
+            }
+        },
+        {
+            "Sr.no.": 4,
+            "Item Name": "Aloo-gobi",
+            "Price": {
+                "half": 110.0,
+                "full": 200.0
+            }
+        },
+        {
+            "Sr.no.": 5,
+            "Item Name": "MatarPaneer",
+            "Price": {
+                "half": 130.0,
+                "full": 250.0
+            }
+        },
+        {
+            "Sr.no.": 6,
+            "Item Name": "Palakpaneer",
+            "Price": {
+                "half": 120.0,
+                "full": 220.0
+            }
+        },
+        {
+            "Sr.no.": 7,
+            "Item Name": "Kadaipaneer",
+            "Price": {
+                "half": 110.0,
+                "full": 200.0
+            }
+        },
+        {
+            "Sr.no.": 8,
+            "Item Name": "Mix-veg",
+            "Price": {
+                "half": 140.0,
+                "full": 250.0
+            }
+        },
+        {
+            "Sr.no.": 9,
+            "Item Name": "paneerburji",
+            "Price": {
+                "half": 120.0,
+                "full": 220.0
+            }
+        },
+        {
+            "Sr.no.": 10,
+            "Item Name": "Tawa-roti",
+            "Price": {
+                "single": 15.0
+            }
+        },
+        {
+            "Sr.no.": 11,
+            "Item Name": "Butter-roti",
+            "Price": {
+                "single": 20.0
+            }
+        },
+        {
+            "Sr.no.": 13,
+            "Item Name": "Kulcha",
+            "Price": {
+                "single": 25.0
+            }
+        },
+        {
+            "Sr.no.": 14,
+            "Item Name": "LachhaParatha",
+            "Price": {
+                "single": 30.0
+            }
+        },
+        {
+            "Sr.no.": 15,
+            "Item Name": "Missi-Roti",
+            "Price": {
+                "single": 40.0
+            }
+        },
+        {
+            "Sr.no.": 16,
+            "Item Name": "TandooriRoti",
+            "Price": {
+                "single": 15.0
+            }
+        },
+        {
+            "Sr.no.": 17,
+            "Item Name": "RumaliRoti",
+            "Price": {
+                "single": 35.0
+            }
+        },
+        {
+            "Item Name": "naan",
+            "Price": {
+                "Single": 35.0
+            }
+        }
+    ],
+    "south indian": [
+        {
+            "Sr.no.": 1,
+            "Item Name": "Dosa",
+            "Price": {
+                "single": 70.0
+            }
+        },
+        {
+            "Sr.no.": 3,
+            "Item Name": "Paneer Dosa",
+            "Price": {
+                "single": 120.0
+            }
+        },
+        {
+            "Sr.no.": 4,
+            "Item Name": "ButterDosa",
+            "Price": {
+                "single": 150.0
+            }
+        },
+        {
+            "Item Name": "Masala dosa",
+            "Price": {
+                "Single": 150.0
+            }
+        },
+        {
+            "Item Name": "idaly sambhar",
+            "Price": {
+                "Single": 80.0
+            }
+        }
+    ]
+}
