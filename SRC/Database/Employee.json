@@ -8,121 +8,16 @@
     },
     {
         "Role": "Staff",
-        "Id": "24d3b12",
-        "Name": "Mahesh",
-        "Email_id": "mahesh@gmail.com",
-        "Password": "mahesh123"
+        "Id": "c846e97",
+        "Name": "tabish",
+        "Email_id": "tabish@gmail.com",
+        "Password": "123123"
     },
     {
         "Role": "Staff",
-        "Id": "c832bf2",
-        "Name": "abhi",
-        "Email_id": "abhi@gmail.com",
-        "Password": "abhi123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "ea1b876",
-        "Name": "Raj",
-        "Email_id": "raj@gmail.com",
-        "Password": "raj123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "ff0b0a1",
-        "Name": "Anurag",
-        "Email_id": "anurag@gmail.com",
-        "Password": "anurag123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "ff0b0a1",
-        "Name": "Vinod",
-        "Email_id": "vinod@gmail.com",
-        "Password": "vinod123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "ee69fc3",
-        "Name": "Vivek",
-        "Email_id": "vivek@gmail.com",
-        "Password": "vivek123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "3c4f27f",
-        "Name": "Vinod",
-        "Email_id": "vinod@gmail.com",
-        "Password": "vinod123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "dec6f36",
-        "Name": "Sameer",
-        "Email_id": "sameer@gmail.com",
-        "Password": "sameer123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "f4c6812",
-        "Name": "Anand",
-        "Email_id": "anand@gmail.com",
-        "Password": "anand123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "df485f2",
-        "Name": "Nandan",
-        "Email_id": "nandan@gmail.com",
-        "Password": "nandan123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "b401c40",
-        "Name": "Vishal",
-        "Email_id": "vishal@gmail.com",
-        "Password": "vishal123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "f247514",
-        "Name": "Amar",
-        "Email_id": "amar@gmail.com",
-        "Password": "amar123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "227fa92",
-        "Name": "Vishal",
-        "Email_id": "vishal@gmail.com",
-        "Password": "vishal123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "6f46ab7",
-        "Name": "Mohit",
-        "Email_id": "mohit@gmail.com",
-        "Password": "mohit123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "3a2f857",
-        "Name": "Aastha",
-        "Email_id": "aastha@gmail.com",
-        "Password": "aastha123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "02ba519",
-        "Name": "Kartik",
-        "Email_id": "kartik@gmail.com",
-        "Password": "kartik123"
-    },
-    {
-        "Role": "Staff",
-        "Id": "a7508d2",
-        "Name": "sumit",
-        "Email_id": "sumit@gmail.com",
-        "Password": "12345678"
+        "Id": "0b3224c",
+        "Name": "radhe",
+        "Email_id": "radhe@gmail.com",
+        "Password": "456456"
     }
 ]

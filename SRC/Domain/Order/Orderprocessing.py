@@ -12,9 +12,9 @@ class OrderSystem:
         self.restaurant = Restaurant()
         self.table = TableBookingReport() 
         self.path = os.getcwd()
-        self.file_path2 = os.path.join(self.path,'SRC','Database','table_booking.json')
-        self.file_path = os.path.join(self.path, 'SRC', 'Database', 'menu.json')
-        self.order_file_path = os.path.join(self.path, 'SRC', 'Database', 'order.json')
+        self.file_path2 = os.path.join(self.path,'Restaurant_Management_System-py','SRC','Database','table_booking.json')
+        self.file_path = os.path.join(self.path, 'Restaurant_Management_System-py','SRC', 'Database', 'menu.json')
+        self.order_file_path = os.path.join(self.path, 'Restaurant_Management_System-py','SRC', 'Database', 'order.json')
         self.items_list = self.load_menu()
         self.ordered_items = []
         self.order_id = str(uuid.uuid4())[0:5]
@@ -132,7 +132,7 @@ class OrderSystem:
     def book_table_after_order(self):
         """Ask the user if they want to book a table after placing their order."""
 
-        self.file_path2 = os.path.join(self.path, 'SRC', 'Database', 'table_booking.json')
+        self.file_path2 = os.path.join(self.path,'Restaurant_Management_System-py', 'SRC', 'Database', 'table_booking.json')
 
         # Available tables with their seating capacities
         available_tables = {1: 2, 2: 4, 3: 6, 4: 8, 5: 10, 6: 12, 7: 14, 8: 16, 9: 18, 10: 20}

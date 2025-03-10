@@ -1,1 +1,4 @@
-print(f"\n {catego")
+from unicodedata import category
+
+
+print(f"\n {category}")

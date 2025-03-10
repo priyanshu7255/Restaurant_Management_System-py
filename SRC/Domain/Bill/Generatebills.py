@@ -8,15 +8,15 @@ from SRC.Domain.Order.Orderprocessing import OrderSystem
 order = OrderSystem()
 
 path = os.getcwd()
-log_file_path = os.path.join(path,'SRC','Logs','Application_log.txt')
+log_file_path = os.path.join(path,'Restaurant_Management_System-py','SRC','Logs','Application_log.txt')
 
 logging.basicConfig(filename=log_file_path, level=logging.ERROR, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class CustomerBill:
     def __init__(self):
         self.path = os.getcwd()
-        self.file_path = os.path.join(self.path, 'SRC', 'Database', 'order.json')
-        self.bill_path = os.path.join(self.path, 'SRC', 'Database', 'bill.json')
+        self.file_path = os.path.join(self.path,'Restaurant_Management_System-py','SRC', 'Database', 'order.json')
+        self.bill_path = os.path.join(self.path, 'Restaurant_Management_System','SRC', 'Database', 'bill.json')
         self.payment_id = str(uuid.uuid4())[0:6]
         self.table = order.table_number
     

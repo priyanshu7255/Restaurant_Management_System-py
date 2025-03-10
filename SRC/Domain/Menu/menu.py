@@ -2,7 +2,7 @@ import json
 import os
 
 path = os.getcwd()
-log_file_path = os.path.join(path,'SRC','Logs','Application_log.txt')
+log_file_path = os.path.join(path,'Restaurant_Management_System-py','SRC','Logs','Application_log.txt')
 
 def log_error(error_message):
     with open(log_file_path, "a") as log_file:
@@ -11,7 +11,7 @@ def log_error(error_message):
 class MenuManager:
     def __init__(self):
         self.path = os.getcwd()
-        self.new_path = os.path.join(self.path, 'SRC', 'Database', 'menu.json')
+        self.new_path = os.path.join(self.path,'Restaurant_Management_System-py', 'SRC', 'Database', 'menu.json')
         self.menu_data = self.load_menu()
 
     def load_menu(self):

@@ -3,7 +3,7 @@ import os
 from datetime import datetime, timedelta
 
 path = os.getcwd()
-file_path = os.path.join(path, 'SRC', 'Database', 'table_booking.json')
+file_path = os.path.join(path, 'Restaurant_Management_System-py','SRC', 'Database', 'table_booking.json')
 
 class Restaurant:
     def __init__(self, filename=file_path):  

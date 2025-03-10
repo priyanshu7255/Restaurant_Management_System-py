@@ -1,6 +1,1 @@
-2025-03-04 14:58:41,605 - ERROR - Error: You cannot generate a bill without ordering anything.
-2025-03-04 15:01:46,172 - ERROR - Error: You cannot generate a bill without ordering anything.
-2025-03-04 15:20:50,101 - ERROR - Error: You cannot generate a bill without ordering anything.
-2025-03-04 17:18:33,291 - ERROR - Invalid number. Enter either 1, 2, 3, 4, or 5.
-2025-03-07 12:11:20,754 - ERROR - Invalid JSON format: 'items' key not found!
-2025-03-07 12:11:27,377 - ERROR - Invalid JSON format: 'items' key not found!
+2025-03-10 14:57:24,179 - ERROR - Error saving bill: [Errno 2] No such file or directory: 'C:\\resturent\\Restaurant_Management_System\\SRC\\Database\\bill.json'

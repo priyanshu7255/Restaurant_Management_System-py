@@ -4,7 +4,7 @@ import os
 class TableBookingReport:
     def __init__(self):
         """Initialize the class and load data from JSON file."""
-        self.file_path = os.path.join(os.getcwd(), 'SRC', 'Database', 'table_booking.json')
+        self.file_path = os.path.join(os.getcwd(),'Restaurant_Management_System-py', 'SRC', 'Database', 'table_booking.json')
         self.bookings = self.load_data()
 
     def load_data(self):

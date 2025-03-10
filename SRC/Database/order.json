@@ -1,5 +1,5 @@
 {
-    "order_id": "e862c",
+    "order_id": "014a8",
     "items": [
         {
             "Item Name": "Dosa",
@@ -8,12 +8,12 @@
             "Total Price": 140.0
         },
         {
-            "Item Name": "Dosa",
+            "Item Name": "Water Bottle",
             "Size": "single",
             "Quantity": 2,
-            "Total Price": 140.0
+            "Total Price": 40.0
         }
     ],
-    "table_number": 8,
-    "customer_name": "neeraj"
+    "table_number": 4,
+    "customer_name": "radhe"
 }

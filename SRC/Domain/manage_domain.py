@@ -5,7 +5,7 @@ from SRC.Authentication import manageprofile
 class Application:
     def __init__(self):
         self.path = os.getcwd()
-        self.log_file_path = os.path.join(self.path, 'SRC', 'Logs', 'Application_log.txt')
+        self.log_file_path = os.path.join(self.path,'Restaurant_Management_System-py', 'SRC', 'Logs', 'Application_log.txt')
         self.auth_manager = manageprofile.AuthenticationManager()
         self.setup_logging()
     

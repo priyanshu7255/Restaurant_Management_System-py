@@ -6,7 +6,7 @@ class RevenueReport:
         """Initialize the RevenueReport class and load data from JSON file."""
         if file_path is None:
             path = os.getcwd()
-            file_path = os.path.join(path, 'SRC', 'Database', 'bill.json')
+            file_path = os.path.join(path,'Restaurant_Management_System-py', 'SRC', 'Database', 'bill.json')
         
         self.file_path = file_path
         self.data = self.load_data()
