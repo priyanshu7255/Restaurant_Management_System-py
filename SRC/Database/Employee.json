@@ -1,0 +1,23 @@
+[
+    {
+        "Role": "Admin",
+        "Id": "6e2af8d",
+        "Name": "Ravi",
+        "Email_id": "ravi@gmail.com",
+        "Password": "ravi123"
+    },
+    {
+        "Role": "Staff",
+        "Id": "c846e97",
+        "Name": "tabish",
+        "Email_id": "tabish@gmail.com",
+        "Password": "123123"
+    },
+    {
+        "Role": "Staff",
+        "Id": "0b3224c",
+        "Name": "radhe",
+        "Email_id": "radhe@gmail.com",
+        "Password": "456456"
+    }
+]
